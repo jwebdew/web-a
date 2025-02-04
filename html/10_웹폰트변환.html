@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹폰트 변환</title>
+    <style>
+        @font-face {
+            font-family: 'GmarketSans';
+            src: url('font/g마켓/GmarketSansBold.woff2') format('woff2'),
+                url('font/g마켓/GmarketSansBold.woff') format('woff');
+            font-weight: bold;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'GmarketSans';
+            src: url('font/g마켓/GmarketSansMedium.woff2') format('woff2'),
+                url('font/g마켓/GmarketSansMedium.woff') format('woff');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'GmarketSans';
+            src: url('font/g마켓/GmarketSansLight.woff2') format('woff2'),
+                url('font/g마켓/GmarketSansLight.woff') format('woff');
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .font p {
+            font-size: 30px;
+        }
+        .font p:nth-child(1) {
+            font-family: 'GmarketSans';
+            font-weight: 300;
+        }
+        .font p:nth-child(2) {
+            font-family: 'GmarketSans';
+            font-weight: 500;
+        }
+        .font p:nth-child(3) {
+            font-family: 'GmarketSans';
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="font">
+        <p>웹폰트 변환 1</p>
+        <p>웹폰트 변환 2</p>
+        <p>웹폰트 변환 3</p>
+    </div>
+
+    <div class="font-02">
+        <p>웹폰트 변환 1</p>
+        <p>웹폰트 변환 2</p>
+        <p>웹폰트 변환 3</p>
+    </div>
+</body>
+
+</html>

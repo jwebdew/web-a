@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플렉서블 박스</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            list-style: none;
+        }
+        div {
+            background-color: aquamarine;
+            margin: 50px;
+            padding: 50px;
+        }
+        div ul {
+            background-color: beige;
+            border: 1px solid black;
+        }
+        div ul li {
+            background-color: yellow;
+            border: 1px solid red;
+        }
+        
+        .flex-01 ul {
+            display: flex;
+            justify-content: space-evenly;
+            /* p.110 */
+            /* flex-start(기본값)
+                space-between
+                center
+                flex-end
+                space-around 
+                space-evenly */
+        }
+
+        .flex-02 ul {
+            display: flex;
+            align-items: center;
+            /* p.112 */
+            /* stretch(기본값)
+                flex-start
+                center
+                flex-end */
+
+        }
+        .flex-02 ul li:first-child {
+            height: 300px;
+        }
+        .flex-02 ul li:nth-child(2) {
+            height: 200px;
+        }
+
+
+        .flex-03 ul {
+            display: flex;
+            
+            flex-wrap: wrap; /* p.106 */
+            height: 300px;
+            align-content: space-between;
+            /* p.116 */
+            /*   
+                stretch(기본값)
+                flex-start 
+                space-between
+                center
+                flex-end
+                space-around 
+                space-evenly */
+        }
+        .flex-03 ul li {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-01">
+        <h1>수평정렬</h1>
+        <ul>
+            <li>아이템 1</li>
+            <li>아이템 2</li>
+            <li>아이템 3</li>
+        </ul>
+    </div><!-- flex-01 -->
+
+    
+
+    <div class="flex-02">
+        <h1>수직정렬</h1>
+        <ul>
+            <li>아이템 1</li>
+            <li>아이템 2</li>
+            <li>아이템 3</li>
+        </ul>
+    </div><!-- flex-01 -->
+
+    <div class="flex-03">
+        <h1>여러줄 수직정렬</h1>
+        <ul>
+            <li>아이템 1</li>
+            <li>아이템 2</li>
+            <li>아이템 3</li>
+        </ul>
+    </div><!-- flex-03 -->
+
+    
+
+
+
+</body>
+</html>

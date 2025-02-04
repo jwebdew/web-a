@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플렉서블박스 노랑풍선</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            width: 370px;
+            height: 208px;
+            border: 1px solid gray;
+            display: flex;
+            justify-content: space-between;
+        }
+        .box img {
+            width: 177px;
+        }
+        .box .text {
+            width: 177px;
+            padding: 10px 16px 10px 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+        }
+        .box .text p {
+            font-size: 15px;
+        }
+        .box .text strong {
+            width: 100%;
+            text-align: right;
+            /* background-color: aqua; */
+            color: #ff0909;
+        }
+
+        .box-02 {
+            width: 370px;
+            height: 208px;
+            border: 1px solid gray;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 16px;
+        }
+        .box-02 img {
+            width: 177px;
+        }
+        .box-02 .text {
+            width: 177px;
+            padding: 10px 16px 10px 0;
+            /* background-color: aquamarine; */
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+        }
+        .box-02 .text p {
+            font-size: 15px;
+        }
+        .box-02 .text strong {
+            width: 100%;
+            text-align: right;
+            /* background-color: beige; */
+            color: #ff0909;
+        }
+
+        .box-03 {
+            width: 370px;
+            border: 1px solid gray;
+            margin-top: 30px;
+            padding: 22px 20px;
+            box-sizing: border-box;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .box-03 img {
+            width: 81px;
+            height: 81px;
+        }
+        .box-03 .text {
+            width: 226px; 
+        }
+        .box-03 .text span {
+            font-size: 13px;
+        }
+        .box-03 .text h2 {
+            font-size: 15px;
+            margin: 10px 0;
+        }
+        .box-03 .text p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="img/노랑풍선/section01-01.jpg" alt="">
+
+        <div class="text">
+            <p>#울릉도3일 #포항크루즈
+                #케랜시아리조트 #육로AB
+                코스포함 #겨울한정
+            </p>
+            <strong>320,000원~</strong>
+        </div>        
+    </div><!-- .box end -->
+
+    <div class="box-02">
+        <img src="img/노랑풍선/section01-02.jpg" alt="">
+        <div class="text">
+            <p>백령도 2일 #3식제공 
+                #서해의비경 #모텔급</p>
+            <strong>181,000원~</strong>
+        </div>
+    </div><!-- box-02 end -->
+
+    <div class="box-03">
+        <img src="img/노랑풍선/section02-01.jpg" alt="">
+        <div class="text">
+            <span>한국,내륙</span>
+            <h2>노란색 아기 산수유가 예뻤던 구례 당일
+                치기 기차여행</h2>
+            <p>남쪽나라 꽃여행 시즌이 돌아온 것 같아서, 
+                오랜만에 가족들과 함께 구례 당일치기 
+                여행을 계획했습니다. 꽃축제들이 많이 열.</p>
+        </div>
+    </div><!-- .box-03 end -->
+</body>
+</html>
